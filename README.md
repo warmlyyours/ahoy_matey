@@ -7,7 +7,7 @@
 
 Use it with any backend. For Rails, check out the [Ahoy gem](https://github.com/ankane/ahoy).
 
-[![Build Status](https://travis-ci.org/ankane/ahoy.js.svg?branch=master)](https://travis-ci.org/ankane/ahoy.js)
+[![Build Status](https://travis-ci.org/ankane/ahoy.js.svg?branch=master)](https://travis-ci.org/warmlyyours/ahoy_matey)
 
 ## Installation
 
@@ -197,7 +197,7 @@ ahoy.configure({cookieDomain: "yourdomain.com"});
 ## Dev Setup
 
 ```sh
-git clone https://github.com/ankane/ahoy.js.git
+git clone https://github.com/warmlyyours/ahoy_matey.git
 cd ahoy.js
 yarn install
 yarn build
@@ -214,13 +214,13 @@ And visit `http://localhost:8080/__zuul` in your browser.
 
 ## History
 
-View the [changelog](https://github.com/ankane/ahoy.js/blob/master/CHANGELOG.md)
+View the [changelog](https://github.com/warmlyyours/ahoy_matey/blob/master/CHANGELOG.md)
 
 ## Contributing
 
 Everyone is encouraged to help improve this project. Here are a few ways you can help:
 
-- [Report bugs](https://github.com/ankane/ahoy.js/issues)
-- Fix bugs and [submit pull requests](https://github.com/ankane/ahoy.js/pulls)
+- [Report bugs](https://github.com/warmlyyours/ahoy_matey/issues)
+- Fix bugs and [submit pull requests](https://github.com/warmlyyours/ahoy_matey/pulls)
 - Write, clarify, or fix documentation
 - Suggest or add new features
