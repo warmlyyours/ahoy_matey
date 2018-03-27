@@ -1,12 +1,12 @@
 {
   "name": "ahoy_matey",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "homepage": "https://github.com/warmlyyours/ahoy_matey",
   "description": "Modern, powerful JavaScript analytics",
   "main": "dist/ahoy.js",
   "module": "src/ahoy.js",
   "scripts": {
-    "prepublish": "webpack",
+    "prepare": "webpack",
     "build": "webpack",
     "lint": "eslint src",
     "test": "zuul test/ahoy_test.js",
