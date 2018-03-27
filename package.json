@@ -24,9 +24,6 @@
     "type": "git",
     "url": "https://github.com/warmlyyours/ahoy_matey"
   },
-  "files": [
-    "dist"
-  ],
   "devDependencies": {
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
