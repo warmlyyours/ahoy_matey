@@ -1,6 +1,6 @@
-# Ahoy.js
+# ahoy_matey
 
-:fire: Visit and event tracking for JavaScript
+⚓️ Visit and event tracking for JavaScript ⛵️
 
 - Easily track unique visitors
 - Track events across page navigation
@@ -9,24 +9,27 @@ Use it with any backend. For Rails, check out the [Ahoy gem](https://github.com/
 
 [![Build Status](https://travis-ci.org/ankane/ahoy.js.svg?branch=master)](https://travis-ci.org/warmlyyours/ahoy_matey)
 
+#### Why was this forked from [Ahoy.js](https://github.com/ankane/ahoy.js)?
+`Ahoy.js` makes poor use of its build tooling. The original author was unwilling to accept changes, so this version trims the fat. (Plus it's  more lightweight & compatible with downstream build tools)
+
 ## Installation
 
-Download [ahoy.js](https://unpkg.com/ahoy.js) and include it on your page.
+Download [ahoy_matey](https://unpkg.com/ahoy_matey) and include it on your page.
 
 ```html
-<script src="ahoy.js"></script>
+<script src="ahoy.min.js"></script>
 ```
 
-Or use Yarn:
+Or use Yarn/npm:
 
 ```sh
-yarn add ahoy.js
+yarn add ahoy_matey
 ```
 
-And import it with:
+-and import it with:
 
 ```es6
-import ahoy from 'ahoy.js';
+import ahoy from 'ahoy_matey';
 ```
 
 ## How It Works
@@ -198,7 +201,7 @@ ahoy.configure({cookieDomain: "yourdomain.com"});
 
 ```sh
 git clone https://github.com/warmlyyours/ahoy_matey.git
-cd ahoy.js
+cd ahoy_matey
 yarn install
 yarn build
 yarn test:local

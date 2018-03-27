@@ -1,36 +1,55 @@
-var webpack = require("webpack")
-var path = require("path")
+const webpack = require('webpack');
+const path = require('path');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
   entry: {
-    "ahoy": "./src/ahoy.js",
-    "ahoy.min": "./src/ahoy.js"
+    'ahoy': './src/ahoy.js'
   },
-  output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "[name].js",
-    library: "ahoy",
-    libraryExport: "default",
-    libraryTarget: "umd"
-  },
+  mode: 'production',
   module: {
     rules: [
       {
         test: /\.js$/,
-        exclude: /(node_modules|bower_components)/,
+        exclude: [
+          /node_modules/
+        ],
         use: {
-          loader: "babel-loader",
+          loader: 'babel-loader',
           options: {
-            presets: ["env"]
+            cacheDirectory: true
           }
         }
       }
     ]
   },
+  resolve: {
+    extensions: ['.js'],
+    modules: [
+      path.resolve(__dirname, '.'),
+      'node_modules'
+    ],
+  },
   plugins: [
-    new webpack.optimize.UglifyJsPlugin({
-      include: /\.min\.js$/,
-      minimize: true
+    new webpack.optimize.ModuleConcatenationPlugin(),
+    new UglifyJsPlugin({
+      sourceMap: true,
+      cache: true,
+      parallel: true
     })
-  ]
-}
+  ],
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: '[name].js',
+    library: 'ahoy',
+    libraryExport: 'default',
+    libraryTarget: 'umd'
+  },
+  // devtool: 'source-map',
+  stats: {
+    context: path.resolve(__dirname, '.'),
+  },
+  performance: {
+    hints: 'warning'
+  },
+};

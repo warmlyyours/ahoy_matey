@@ -1,0 +1,25 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": [
+            "Explorer 11",
+            "last 3 Chrome versions",
+            "last 3 FireFox versions",
+            "last 3 Safari versions",
+            "last 3 iOS versions",
+            "last 3 ChromeAndroid versions",
+            "last 3 Edge versions"
+          ]
+        },
+        "useBuiltIns": "usage",
+        "debug": false,
+        "modules": false,
+        "loose": true
+      }
+    ]
+  ],
+  "plugins": []
+}
